@@ -7,9 +7,11 @@ const Hero = () => {
     <Main className="">
       <div className="flex flex-col items-center text-center">
         <div className="">
-          <p className="big text-5xl flex font-normal">
-            <p>If you could </p>{" "}
-            <p className="orange font-medium">experience</p>
+          <p className="big flex font-normal">
+            <span>
+              If you could
+              <span className="orange font-medium"> experience</span>
+            </span>{" "}
           </p>
           <p className="big text-5xl">the internet like never</p>
           <p className="big text-5xl">before...</p>
@@ -39,7 +41,6 @@ const Main = styled.div`
   .big {
     font-weight: 400;
     font-family: "GeneralSans-Variable";
-    /* letter-spacing: 2px; */
     font-size: 58px;
   }
 
@@ -47,6 +48,7 @@ const Main = styled.div`
     font-family: "GeneralSans-Variable";
     font-size: 18px;
     font-weight: 400;
+    letter-spacing: 0.5px;
   }
 
   .orange {

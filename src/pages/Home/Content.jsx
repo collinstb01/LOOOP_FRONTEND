@@ -12,7 +12,7 @@ function Content() {
     <Main>
       <Navbar />
       <Hero />
-      <div className="w-100 flex justify-center pt-16 pb-28">
+      <div className="w-100 flex justify-center pt-24 pb-28">
         <div className="w-2/3  box_container flex justify-around">
           <div className="box box1 flex flex-col justify-between">
             <div>

@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 function Buttons() {
   return (
-    <Main className="flex flex-col justify-between">
-      <div>
+    <Main className="flex flex-col flex-wrap justify-between">
+      <div className="">
         <input
           type="text"
           placeholder="Enter your Email"
-          className="h-16 w-96 mr-6"
+          className="mb-4 lg:mb-0  h-16 w-96 mr-0 lg:mr-6"
         />
-        <button className="h-16">Join waitlist</button>
+        <button className="h-16 w-96 lg:w-48">Join waitlist</button>
       </div>
     </Main>
   );
@@ -26,7 +26,6 @@ const Main = styled.div`
     font-weight: 500;
     font-size: 18px;
     border-radius: 15px;
-    width: 193px;
   }
 
   input {

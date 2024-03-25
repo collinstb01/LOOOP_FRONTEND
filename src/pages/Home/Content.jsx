@@ -12,8 +12,8 @@ function Content() {
     <Main>
       <Navbar />
       <Hero />
-      <div className="w-100 flex justify-center pt-24 pb-28">
-        <div className="w-2/3  box_container flex justify-around">
+      <div className="w-100 grid justify-center pt-24 pb-28">
+        <div className=" box_container grid lg:grid-cols-2 gap-20">
           <div className="box box1 flex flex-col justify-between">
             <div>
               <div className="flex">

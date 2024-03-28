@@ -11,7 +11,7 @@ const Navbar = () => {
         {" "}
         <img src={logo} alt="" />
       </div>
-      <div>
+      <div className="WhatdIsloop">
         <h3 className="">What is looop?</h3>
       </div>
       <div className="flex">
@@ -27,6 +27,11 @@ export default Navbar;
 const Main = styled.div`
   height: 100px;
 
+  .WhatdIsloop {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
   h3 {
     font-weight: 500;
     font-size: 18px;

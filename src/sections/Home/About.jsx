@@ -22,9 +22,9 @@ const About = () => {
         </div>
       </div>
 
-      <Banner className="pt-20 w-100 flex flex-col justify-center items-center">
+      <Banner className="pt-20 w-100 flex flex-col justify-center items-center lg:px-0 px-8">
         <div className="">
-          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
+          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0">
             <div className="first mr-0 lg:mr-5">
               <p className="text-5xl">Create & earn</p>
               <p className="text-5xl">on your own</p>
@@ -44,7 +44,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 px-8 lg:pb-0 pb-20">
+          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 lg:pb-0 pb-20">
             <div className="third flex flex-col lg:pt-16 pt-12 relative overflow-hidden">
               <span className="text-5xl pb-4">
                 <span className="font-semibold">Connect</span> with your{" "}
@@ -84,7 +84,7 @@ const Banner = styled.div`
     }
   }
   .bottom {
-    width: 1056px;
+    /* width: 1056px; */
     /* display: grid; */
     /* grid-template-columns: repeat(1, auto) repeat(1, 408px); */ /* grid-template-rows: repeat(1, 2fr) repeat(1, 1fr); */
 
@@ -137,9 +137,9 @@ const Banner = styled.div`
     color: white;
     z-index: -2;
     font-size: 48px;
-    /* @media (max-width: 1100px) {
+    @media (max-width: 1100px) {
       width: 100%;
-    } */
+    }
   }
   img {
     z-index: -3;

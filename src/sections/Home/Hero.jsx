@@ -7,7 +7,7 @@ const Hero = () => {
     <Main className="w-100">
       <div className="ctn flex flex-col justify-center items-center text-center">
         <div className="">
-          <p className="big flex font-normal">
+          <p className="big flex font-normal lg:text-6xl text-5xl">
             <span>
               If you could
               <span className="orange font-medium"> experience </span>
@@ -44,7 +44,6 @@ const Main = styled.div`
   .big {
     font-weight: 400;
     font-family: "GeneralSans-Variable";
-    font-size: 48px;
     max-width: 640px;
     line-height: 60px;
   }

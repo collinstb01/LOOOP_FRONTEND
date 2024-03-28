@@ -22,16 +22,16 @@ const About = () => {
         </div>
       </div>
 
-      <Banner className="pt-20 w-100 flex flex-col justify-center items-center">
-        <div className="">
-          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
+      <Banner className="pt-20 w-100 flex flex-col justify-center items-center lg:px-0 px-10">
+        <div className="w-100">
+          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0 ">
             <div className="first mr-0 lg:mr-5">
               <p className="text-5xl">Create & earn</p>
               <p className="text-5xl">on your own</p>
               <p className="text-5xl">terms</p>
               {/* <img src={third} alt="" /> */}
             </div>
-            <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-80 text-xl lg:pb-0 pb-20">
+            <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-80 text-xl lg:pb-0">
               <span className="text-5xl">
                 Take <span className="font-medium">control</span> of your
               </span>
@@ -44,13 +44,13 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
+          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 ">
             <div className="third flex flex-col relative overflow-hidden">
               <span className="text-5xl pb-4">
                 <span className="font-semibold">Connect</span> with your{" "}
                 <span className="font-semibold">fans</span>
               </span>
-              <p className="text-xl  pr-8 lg:pb-0 pb-20">
+              <p className="text-xl  pr-8 lg:pb-0">
                 Looop helps you create a community around your fanbase, you have
                 never been more connected to your fans than you’re about to be
               </p>
@@ -108,7 +108,7 @@ const Banner = styled.div`
     color: white;
 
     @media (max-width: 1100px) {
-      width: auto;
+      width: 100%;
     }
   }
 
@@ -120,6 +120,10 @@ const Banner = styled.div`
     height: 332px;
 
     width: auto;
+    @media (max-width: 1100px) {
+      height: auto;
+      padding-bottom: 80px;
+    }
   }
 
   .third {
@@ -129,6 +133,11 @@ const Banner = styled.div`
     padding-left: 48px;
     color: white;
     z-index: -2;
+
+    @media (max-width: 1100px) {
+      height: auto;
+      padding-bottom: 80px;
+    }
   }
   .fourth {
     min-width: 408px;
@@ -141,7 +150,7 @@ const Banner = styled.div`
     z-index: -2;
     font-size: 48px;
     @media (max-width: 1100px) {
-      width: auto;
+      width: 100%;
     }
   }
   img {

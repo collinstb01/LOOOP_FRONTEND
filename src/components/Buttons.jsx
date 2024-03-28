@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Buttons() {
   return (
     <Main className="flex flex-col flex-wrap justify-between">
-      <div className="">
+      <div className="lg:flex">
         <div>
           <input
             type="text"

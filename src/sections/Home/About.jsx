@@ -22,21 +22,21 @@ const About = () => {
         </div>
       </div>
 
-      <Banner className="pt-20 w-100 flex flex-col justify-center items-center lg:px-0 px-8">
+      <Banner className="pt-20 w-100 flex flex-col justify-center items-center">
         <div className="">
-          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0">
+          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
             <div className="first mr-0 lg:mr-5">
               <p className="text-5xl">Create & earn</p>
               <p className="text-5xl">on your own</p>
               <p className="text-5xl">terms</p>
               {/* <img src={third} alt="" /> */}
             </div>
-            <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-20">
+            <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-80 text-xl lg:pb-0 pb-20">
               <span className="text-5xl">
                 Take <span className="font-medium">control</span> of your
               </span>
               <p className="text-5xl">content</p>
-              <p className="pt-4 text-xl">
+              <p className="pt-4 text-xl pr-8">
                 As a creator on looop, you have complete freedom over any
                 content you choose to create.
               </p>
@@ -44,20 +44,20 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 lg:pb-0 pb-20">
-            <div className="third flex flex-col lg:pt-16 pt-12 relative overflow-hidden">
+          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
+            <div className="third flex flex-col relative overflow-hidden">
               <span className="text-5xl pb-4">
                 <span className="font-semibold">Connect</span> with your{" "}
                 <span className="font-semibold">fans</span>
               </span>
-              <p className="">
+              <p className="text-xl  pr-8 lg:pb-0 pb-20">
                 Looop helps you create a community around your fanbase, you have
                 never been more connected to your fans than you’re about to be
               </p>
               <img src={third} alt="" className="absolute bottom-0" />
             </div>
 
-            <div className="fourth ml-0 lg:ml-5 text-5xl relative overflow-hidden lg:mt-0 mt-8">
+            <div className="fourth ml-0 lg:ml-5 text-5xl relative overflow-hidden lg:mt-0 mt-8 lg:pb-0 pb-28">
               <p>And you are</p>
               <p>
                 always <span className="font-semibold">in the</span>
@@ -84,7 +84,7 @@ const Banner = styled.div`
     }
   }
   .bottom {
-    /* width: 1056px; */
+    width: 1056px;
     /* display: grid; */
     /* grid-template-columns: repeat(1, auto) repeat(1, 408px); */ /* grid-template-rows: repeat(1, 2fr) repeat(1, 1fr); */
 
@@ -108,7 +108,7 @@ const Banner = styled.div`
     color: white;
 
     @media (max-width: 1100px) {
-      width: 100%;
+      width: auto;
     }
   }
 
@@ -117,19 +117,22 @@ const Banner = styled.div`
     padding-left: 48px;
     background-color: #2dd881;
     z-index: -2;
+    height: 332px;
+
     width: auto;
   }
 
   .third {
     background-color: #9d69a3;
     height: 323px;
+    padding-top: 48px;
     padding-left: 48px;
     color: white;
     z-index: -2;
   }
   .fourth {
     min-width: 408px;
-    height: 332px;
+    /* height: 332px; */
     padding-top: 52px;
     padding-left: 48px;
     padding-right: 48px;
@@ -138,7 +141,7 @@ const Banner = styled.div`
     z-index: -2;
     font-size: 48px;
     @media (max-width: 1100px) {
-      width: 100%;
+      width: auto;
     }
   }
   img {

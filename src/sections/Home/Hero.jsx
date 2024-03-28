@@ -44,7 +44,7 @@ const Main = styled.div`
   .big {
     font-weight: 400;
     font-family: "GeneralSans-Variable";
-    font-size: 58px;
+    font-size: 48px;
     max-width: 640px;
     line-height: 60px;
   }

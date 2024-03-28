@@ -5,12 +5,16 @@ function Buttons() {
   return (
     <Main className="flex flex-col flex-wrap justify-between">
       <div className="">
-        <input
-          type="text"
-          placeholder="Enter your Email"
-          className="mb-4 lg:mb-0  h-16 w-96 mr-0 lg:mr-6"
-        />
-        <button className="h-16 w-96 lg:w-48">Join waitlist</button>
+        <div>
+          <input
+            type="text"
+            placeholder="Enter your Email"
+            className="mb-4 lg:mb-0  h-16 w-96 mr-0 lg:mr-6"
+          />
+        </div>
+        <div>
+          <button className="h-16 w-96 lg:w-48">Join waitlist</button>
+        </div>
       </div>
     </Main>
   );

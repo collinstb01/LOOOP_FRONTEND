@@ -28,6 +28,10 @@ const Main = styled.div`
   .ctn {
     border-radius: 48px;
     position: relative;
+
+    @media (max-width: 1100px) {
+      border-radius: 0px;
+    }
   }
   span {
     color: #2dd881;

@@ -24,14 +24,14 @@ const About = () => {
 
       <Banner className="pt-20 w-100 flex flex-col justify-center items-center">
         <div className="">
-          <div className="top flex w-100">
-            <div className="first mr-5">
+          <div className="top flex flex-wrap lg:flex-nowrap lg:px-0 px-8">
+            <div className="first mr-0 lg:mr-5">
               <p className="text-5xl">Create & earn</p>
               <p className="text-5xl">on your own</p>
               <p className="text-5xl">terms</p>
               {/* <img src={third} alt="" /> */}
             </div>
-            <div className="sec relative overflow-hidden">
+            <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-20">
               <span className="text-5xl">
                 Take <span className="font-medium">control</span> of your
               </span>
@@ -44,8 +44,8 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bottom pt-6 flex w-100 ">
-            <div className="third  flex flex-col justify-center relative overflow-hidden">
+          <div className="bottom pt-6 flex flex-wrap lg:flex-nowrap lg:px-0 px-8 lg:pb-0 pb-20">
+            <div className="third flex flex-col lg:pt-16 pt-12 relative overflow-hidden">
               <span className="text-5xl pb-4">
                 <span className="font-semibold">Connect</span> with your{" "}
                 <span className="font-semibold">fans</span>
@@ -57,14 +57,12 @@ const About = () => {
               <img src={third} alt="" className="absolute bottom-0" />
             </div>
 
-            <div className="fourth ml-5 text-5xl relative overflow-hidden">
-              <div className="s">
-                <p>And you are</p>
-                <p>
-                  always <span className="font-semibold">in the</span>
-                </p>
-                <p className="font-semibold">looop...</p>
-              </div>
+            <div className="fourth ml-0 lg:ml-5 text-5xl relative overflow-hidden lg:mt-0 mt-8">
+              <p>And you are</p>
+              <p>
+                always <span className="font-semibold">in the</span>
+              </p>
+              <p className="font-semibold">looop...</p>
               <div className="absolute bottom-0 right-0 img img">
                 <img src={fourth} alt="" className="" />
               </div>
@@ -80,17 +78,19 @@ export default About;
 const Banner = styled.div`
   .top {
     width: 1056px;
-    display: grid;
-    grid-template-columns:
-      repeat(1, 408px)
-      repeat(1, auto);
-    /* grid-template-rows: repeat(1, 2fr) repeat(1, 1fr); */
+
+    @media (max-width: 1100px) {
+      width: auto;
+    }
   }
   .bottom {
     width: 1056px;
-    display: grid;
-    grid-template-columns: repeat(1, auto) repeat(1, 408px);
-    /* grid-template-rows: repeat(1, 2fr) repeat(1, 1fr); */
+    /* display: grid; */
+    /* grid-template-columns: repeat(1, auto) repeat(1, 408px); */ /* grid-template-rows: repeat(1, 2fr) repeat(1, 1fr); */
+
+    @media (max-width: 1100px) {
+      width: auto;
+    }
   }
 
   .first,
@@ -102,11 +102,16 @@ const Banner = styled.div`
   .first {
     background-color: #1e212b;
     height: 332px;
-    /* width: 408px; */
+    min-width: 408px;
     padding-top: 52px;
     padding-left: 48px;
     color: white;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
   }
+
   .sec {
     padding-top: 52px;
     padding-left: 48px;
@@ -118,17 +123,23 @@ const Banner = styled.div`
   .third {
     background-color: #9d69a3;
     height: 323px;
-    padding-top: 52px;
     padding-left: 48px;
     color: white;
     z-index: -2;
   }
   .fourth {
+    min-width: 408px;
+    height: 332px;
     padding-top: 52px;
     padding-left: 48px;
+    padding-right: 48px;
     background: #ff6d1b;
     color: white;
     z-index: -2;
+    font-size: 48px;
+    /* @media (max-width: 1100px) {
+      width: 100%;
+    } */
   }
   img {
     z-index: -3;

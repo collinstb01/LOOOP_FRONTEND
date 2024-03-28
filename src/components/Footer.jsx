@@ -7,7 +7,7 @@ import twitter from "../assets/twitter.png";
 const Footer = () => {
   return (
     <Main className="w-100 flex justify-center pb-20">
-      <div className="ctn grid lg:grid-cols-3">
+      <div className="ctn grid lg:grid-cols-3 lg:text-left text-center">
         <div className="first flex items-center flex-col">
           <div>
             <img src={logo} alt="" />
@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="sec flex justify-center">
+        <div className="sec flex justify-center pt-16 lg:pt-0">
           <div className="">
             <p className="heading font-medium text-2xl">Help Center</p>
             <ul>
@@ -28,7 +28,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="third flex items-center flex-col">
+        <div className="third flex items-center flex-col pt-16 lg:pt-0">
           <p className="heading font-medium text-2xl">Join the community</p>
           <div className="flex pt-4 items-center">
             <img src={discord} alt="" className="twitter mr-8" />

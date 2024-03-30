@@ -9,14 +9,19 @@ const Navbar = () => {
     <Main className="flex justify-around items-center">
       <div>
         {" "}
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className="lg:w-full w-9/12" />
       </div>
       <div className="WhatdIsloop">
         <h3 className="">What is looop?</h3>
       </div>
       <div className="flex">
-        <img src={discord} alt="" srcset="" className="px-12" />
-        <img src={twitter} alt="" srcset="" />
+        <img
+          src={discord}
+          alt=""
+          srcset=""
+          className="px-12 lg:w-full w-9/12"
+        />
+        <img src={twitter} alt="" srcset="lg:w-full w-9/12" />
       </div>
     </Main>
   );

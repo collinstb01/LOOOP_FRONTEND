@@ -4,10 +4,10 @@ import Buttons from "../../components/Buttons";
 
 const Hero = () => {
   return (
-    <Main className="w-100">
+    <Main className="w-100 lg:p-16 p-5">
       <div className="ctn flex flex-col justify-center items-center text-center">
         <div className="">
-          <p className="big flex font-normal lg:text-6xl text-5xl">
+          <p className="big flex font-normal lg:text-6xl text-4xl">
             <span>
               If you could
               <span className="orange font-medium"> experience </span>
@@ -16,15 +16,15 @@ const Hero = () => {
           </p>
         </div>
         <div className="mt-4 mb-8">
-          <p className="small">
+          <p className="small lg:text-lg text-sm">
             Imagine a place where you could feel personally connected to your
             favorite
           </p>
-          <p className="small">
+          <p className="small lg:text-lg text-sm">
             creators? It’s not a Euphoria, it’s coming soon...
           </p>
         </div>
-        <p className="pb-7 text-2xl font-medium ">
+        <p className="pb-7 lg:text-2xl text-sm font-medium ">
           Want to be an early adventurer?
         </p>{" "}
         <Buttons />
@@ -36,8 +36,6 @@ const Hero = () => {
 export default Hero;
 
 const Main = styled.div`
-  padding-top: 72px;
-
   .ctn {
     /* width: 620px; */
   }
@@ -46,11 +44,14 @@ const Main = styled.div`
     font-family: "GeneralSans-Variable";
     max-width: 640px;
     line-height: 60px;
+
+    @media (max-width: 768px) {
+      line-height: 40px;
+    }
   }
 
   .small {
     font-family: "GeneralSans-Variable";
-    font-size: 18px;
     font-weight: 400;
     letter-spacing: 0.5px;
   }

@@ -7,10 +7,10 @@ const Reach = () => {
   return (
     <Main className="pt-30 pb-60 flex justify-center items-center">
       <div className="ctn flex flex-col justify-center items-center pt-20">
-        <p className="text-white text-5xl p font-medium">
+        <p className="text-white lg:text-5xl text-3xl p font-medium">
           The <span>new wave</span> of the interacting on the internet is here
         </p>
-        <p className="p2 text-white pt-12 font-medium text-2xl pb-6">
+        <p className="p2 text-white pt-12 font-medium lg:text-2xl text-lg pb-6">
           Be early! Join the waitlist now
         </p>
         <div className="pb-20">
@@ -48,6 +48,10 @@ const Main = styled.div`
     width: 1056px;
     background-color: #1e212b;
     z-index: -2;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   .img {
     position: absolute;

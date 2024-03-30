@@ -12,7 +12,7 @@ function Content() {
     <Main>
       <Navbar />
       <Hero />
-      <div className="w-100 grid justify-center pt-24 pb-28">
+      <div className="w-100 grid justify-center pt-24 pb-28 px-20">
         <div className=" box_container grid lg:grid-cols-2 gap-20">
           <div className="box box1 flex flex-col justify-between">
             <div>
@@ -50,6 +50,7 @@ export default Content;
 
 const Main = styled.div`
   .box_container {
+    width: 100%;
     .box1 {
       rotate: -10deg;
       background-color: #2dd881;
@@ -58,7 +59,18 @@ const Main = styled.div`
       rotate: 10deg;
       background-color: #9d69a3;
     }
+
     .box {
+      padding: 42px 0px 0px 36px;
+      width: 326px;
+      height: 349px;
+      position: relative;
+      border-radius: 45px;
+
+      @media (max-width: 768px) {
+        height: 300px;
+        width: 300px;
+      }
       .connect {
         background: black;
         clip-path: polygon(0 2%, 100% 16%, 100% 100%, 0 100%);
@@ -67,11 +79,6 @@ const Main = styled.div`
         color: black !important;
         font-weight: 600;
       }
-      padding: 42px 0px 0px 36px;
-      width: 326px;
-      height: 349px;
-      position: relative;
-      border-radius: 45px;
 
       .img_logo {
         position: absolute;
@@ -83,6 +90,10 @@ const Main = styled.div`
         color: white;
         line-height: 40px;
         font-family: "GeneralSans-Variable";
+
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
       }
     }
   }

@@ -9,8 +9,8 @@ const Footer = () => {
     <Main className="w-100 flex justify-center pb-20">
       <div className="ctn grid lg:grid-cols-3 lg:text-left text-center">
         <div className="first flex items-center flex-col">
-          <div>
-            <img src={logo} alt="" />
+          <div className="flex lg:items-auto items-center flex-col">
+            <img src={logo} alt="" className="lg:w-full w-9/12" />
             <div className="mt-4">
               <p>© 2024 Looop. </p>
               <p>All rights reserved</p>
@@ -19,7 +19,9 @@ const Footer = () => {
         </div>
         <div className="sec flex justify-center pt-16 lg:pt-0">
           <div className="">
-            <p className="heading font-medium text-2xl">Help Center</p>
+            <p className="heading font-medium lg:text-2xl text-xl">
+              Help Center
+            </p>
             <ul>
               <li>About looop</li>
               <li>Contact us</li>
@@ -29,10 +31,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="third flex items-center flex-col pt-16 lg:pt-0">
-          <p className="heading font-medium text-2xl">Join the community</p>
+          <p className="heading font-medium lg:text-2xl text-xl">
+            Join the community
+          </p>
           <div className="flex pt-4 items-center">
-            <img src={discord} alt="" className="twitter mr-8" />
-            <img src={twitter} alt="" className="discord" />
+            <img
+              src={discord}
+              alt=""
+              className="twitter mr-8 lg:w-full w-9/12"
+            />
+            <img src={twitter} alt="" className="discord lg:w-full w-9/12" />
           </div>
         </div>
       </div>
@@ -52,7 +60,7 @@ const Main = styled.div`
     padding-bottom: 136px;
   }
   .img {
-    width: 144.81px;
+    /* width: 144.81px; */
   }
   li {
     padding-top: 16px;

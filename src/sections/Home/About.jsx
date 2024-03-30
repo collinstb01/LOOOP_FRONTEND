@@ -30,7 +30,7 @@ const About = () => {
             <div className="first mr-0 lg:mr-5 lg:pr-0 pr-4">
               <p className="lg:text-5xl text-2xl">Create & earn</p>
               <p className="lg:text-5xl text-2xl">on your own</p>
-              <p className="lg:text-5xl text-2xl">terms</p>
+              <p className="lg:text-5xl text-4xl font-medium">terms</p>
               {/* <img src={third} alt="" /> */}
             </div>
             <div className="sec relative overflow-hidden lg:mt-0 mt-6 lg:pb-0 pb-80 text-xl lg:pb-0 lg:pr-0 pr-4">
@@ -59,7 +59,7 @@ const About = () => {
               <img src={third} alt="" className="absolute bottom-0" />
             </div>
 
-            <div className="fourth ml-0 lg:ml-5 lg:text-5xl texl-2xl relative overflow-hidden lg:mt-0 mt-8 lg:pb-0 pb-28 lg:pr-0 pr-4">
+            <div className="fourth ml-0 lg:ml-5 lg:text-5xl text-2xl relative overflow-hidden lg:mt-0 mt-8 lg:pb-0 pb-28 lg:pr-0 pr-4">
               <p>And you are</p>
               <p>
                 always <span className="font-semibold">in the</span>

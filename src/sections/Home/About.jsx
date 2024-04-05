@@ -19,7 +19,11 @@ const About = () => {
           What is looop?
         </h3>
         <div className="flex ctn">
-          <div className="w-2/3" onClick={() => setState(1)}>
+          <div
+            className="w-2/3"
+            onClick={() => setState(1)}
+            style={{ cursor: "pointer" }}
+          >
             <p
               className={`${
                 state == 1
@@ -33,6 +37,7 @@ const About = () => {
           <div
             className="w-2/3 flex justify-center items-center"
             onClick={() => setState(2)}
+            style={{ cursor: "pointer" }}
           >
             <p
               className={`${

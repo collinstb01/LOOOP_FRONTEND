@@ -5,7 +5,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 
 function Buttons() {
   const { publicKey } = useWallet();
-  const [walletAddr, setWalletAddr] = useState("");
+  // const [walletAddr, setWalletAddr] = useState("");
   const [email, setEmail] = useState("");
   const [thereIsEmail, setThereIsEmail] = useState(false);
   const thereIsEmailOnLocalStorage = window.localStorage.getItem("email")

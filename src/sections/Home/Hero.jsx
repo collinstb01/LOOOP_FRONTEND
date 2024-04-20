@@ -37,7 +37,6 @@ export default Hero;
 
 const Main = styled.div`
   .ctn {
-    /* width: 620px; */
   }
   .big {
     font-weight: 400;

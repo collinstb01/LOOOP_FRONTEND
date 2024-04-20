@@ -29,7 +29,7 @@ const Main = styled.div`
     border-radius: 48px;
     position: relative;
 
-    @media (max-width: 1100px) {
+    @media (max-width: 1110px) {
       border-radius: 0px;
     }
   }

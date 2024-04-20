@@ -15,13 +15,20 @@ const Navbar = () => {
         <h3 className="">What is looop?</h3>
       </div>
       <div className="flex">
-        <img
-          src={discord}
-          alt=""
-          srcset=""
-          className="px-12 lg:w-full w-9/12"
-        />
-        <img src={twitter} alt="" srcset="lg:w-full w-9/12" />
+        <a
+          href="https://discord.com/channels/1213826532414586932/1213826532892483646"
+          target="_blank"
+        >
+          <img
+            src={discord}
+            alt=""
+            srcset=""
+            className="px-12 lg:w-full w-9/12"
+          />
+        </a>
+        <a href="https://twitter.com/Loop_dapp" target="_blank">
+          <img src={twitter} alt="" srcset="lg:w-full w-9/12" />
+        </a>
       </div>
     </Main>
   );

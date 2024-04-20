@@ -4,7 +4,10 @@ import { RouterProvider } from "react-router-dom";
 import router from "./App";
 import "./index.css";
 import "./assets/general-sans.css";
+import WalletContextProvider from "./components/ConnectWallet";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
+  <WalletContextProvider>
+    <RouterProvider router={router} />
+  </WalletContextProvider>
 );

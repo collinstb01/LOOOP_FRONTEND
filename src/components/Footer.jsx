@@ -35,12 +35,19 @@ const Footer = () => {
             Join the community
           </p>
           <div className="flex pt-4 items-center">
-            <img
-              src={discord}
-              alt=""
-              className="twitter mr-8 lg:w-full w-9/12"
-            />
-            <img src={twitter} alt="" className="discord lg:w-full w-9/12" />
+            <a
+              href="https://discord.com/channels/1213826532414586932/1213826532892483646"
+              target="_blank"
+            >
+              <img
+                src={discord}
+                alt=""
+                className="twitter mr-8 lg:w-full w-9/12"
+              />
+            </a>
+            <a href="https://twitter.com/Loop_dapp" target="_blank">
+              <img src={twitter} alt="" className="discord lg:w-full w-9/12" />
+            </a>
           </div>
         </div>
       </div>

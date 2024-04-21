@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useWallet } from "@solana/wallet-adapter-react";
+import { toast } from "react-toastify";
 
 function Buttons() {
-  const { publicKey } = useWallet();
-  // const [walletAddr, setWalletAddr] = useState("");
   const [email, setEmail] = useState("");
   const [thereIsEmail, setThereIsEmail] = useState(false);
   const thereIsEmailOnLocalStorage = window.localStorage.getItem("email")
@@ -13,33 +12,19 @@ function Buttons() {
     : false;
 
   const joinWaitlist = () => {
+    if (email == "") {
+      return toast.error("Please Enter an email address", {});
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return toast.error("Please enter a valid email address");
+    }
     if (!thereIsEmail || !thereIsEmailOnLocalStorage) {
       window.localStorage.setItem("email", email);
       setThereIsEmail(true);
-    } else {
-      console.log("connecting email");
-
-      axios
-        .post("/user", {
-          firstName: "Fred",
-          lastName: "Flintstone",
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
+      toast("SWEET, Now Connect Your Wallet");
     }
   };
-
-  const saveToDB = () => {
-    console.log("Saving");
-  };
-  useEffect(() => {
-    console.log(publicKey);
-    saveToDB();
-  }, [publicKey]);
 
   return (
     <Main className="flex flex-col flex-wrap justify-between">

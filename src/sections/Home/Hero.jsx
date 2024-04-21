@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import styled from "styled-components";
 import Buttons from "../../components/Buttons";
+import { useWallet } from "@solana/wallet-adapter-react";
+import { toast } from "react-toastify";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const Hero = () => {
+  const [success, setSuccess] = useState(false);
+  const { connected } = useWallet();
+
+  const saveToDB = () => {
+    if (localStorage.getItem("savedOnDB") == "true") {
+      return toast("you are already waitlisted on this device");
+    }
+
+    // axios
+    //   .post("/user", {
+    //     firstName: "Fred",
+    //     lastName: "Flintstone",
+    //   })
+    //   .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
+
+    localStorage.setItem("savedOnDB", "true");
+    toast("LG, you are now in the LOOOP!");
+    setSuccess(true);
+  };
+
+  useEffect(() => {
+    // console.log(connected);
+    if (connected == true) {
+      saveToDB();
+    }
+  }, [connected]);
+
   return (
     <Main className="w-100 lg:p-16 p-5">
       <div className="ctn flex flex-col justify-center items-center text-center">
@@ -26,8 +61,13 @@ const Hero = () => {
         </div>
         <p className="pb-7 lg:text-2xl text-sm font-medium ">
           Want to be an early adventurer?
-        </p>{" "}
+        </p>
         <Buttons />
+        {success && (
+          <p className="pt-2 text-sm font-medium text-green-800 ">
+            Successfully Waitlisted
+          </p>
+        )}
       </div>
     </Main>
   );

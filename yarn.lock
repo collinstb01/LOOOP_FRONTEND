@@ -3079,7 +3079,7 @@ axios@^0.21.0:
 
 axios@^1.6.8:
   version "1.6.8"
-  resolved "https://registry.npmjs.org/axios/-/axios-1.6.8.tgz"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.8.tgz#66d294951f5d988a00e87a0ffb955316a619ea66"
   integrity sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==
   dependencies:
     follow-redirects "^1.15.6"
@@ -4519,6 +4519,13 @@ fraction.js@^4.3.7:
   version "4.3.7"
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.7.tgz"
   integrity sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==
+
+framer-motion@^11.1.9:
+  version "11.1.9"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-11.1.9.tgz#1ef021fc35615eb83d6baa903a47ba872be99187"
+  integrity sha512-flECDIPV4QDNcOrDafVFiIazp8X01HFpzc01eDKJsdNH/wrATcYydJSH9JbPWMS8UD5lZlw+J1sK8LG2kICgqw==
+  dependencies:
+    tslib "^2.4.0"
 
 fs.realpath@^1.0.0:
   version "1.0.0"

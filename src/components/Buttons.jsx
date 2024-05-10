@@ -4,8 +4,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { toast } from "react-toastify";
 
-function Buttons() {
-  const [email, setEmail] = useState("");
+function Buttons({ email, setEmail }) {
   const [thereIsEmail, setThereIsEmail] = useState(false);
   const thereIsEmailOnLocalStorage = window.localStorage.getItem("email")
     ? true
@@ -44,7 +43,7 @@ function Buttons() {
         </div>
         <div className="flex">
           {thereIsEmail || thereIsEmailOnLocalStorage ? (
-            <div className="lg:h-16 h-14 lg:w-48 w-full">
+            <div className="lg:h-16  lg:w-48 w-full">
               <WalletMultiButton
                 style={{
                   height: "64px",
@@ -79,7 +78,7 @@ const Main = styled.div`
     font-weight: 500;
     font-size: 18px;
     border-radius: 15px;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
   }
 
   input {

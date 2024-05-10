@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Buttons from "../../components/Buttons";
 import { useWallet } from "@solana/wallet-adapter-react";

@@ -17,10 +17,14 @@ const Hero = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/waitlist/waitlist-user", {
-        email: localStorage.getItem("email"),
-        walletAddress: publicKey.toString(),
-      });
+      await axios.post(
+        // "http://localhost:3000/waitlist/waitlist-user",
+        "https://looop-server.onrender.com/waitlist/waitlist-user",
+        {
+          email: localStorage.getItem("email"),
+          walletAddress: publicKey.toString(),
+        }
+      );
 
       localStorage.setItem("savedOnDB", "true");
       toast("LG, you are now in the LOOOP!");
